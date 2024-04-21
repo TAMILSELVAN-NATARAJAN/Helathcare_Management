@@ -1,0 +1,282 @@
+.Navbar{
+    background-color: var(--bg-color);
+    position: sticky;
+    top: 0;
+    z-index: 100000;
+    width: 100%;
+}
+.Navbar .navbar_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    position: relative;
+    
+}
+.navbar_container .logo{
+    margin-left: 20px;
+    display:flex;
+    align-items: center;
+    position: relative;
+}
+
+
+.navbar_container .logo::before{
+    content: "HealTech-Me";
+    position: absolute;
+    top: 37px;
+    left: 70px;
+    color: white;
+    width: 100px;
+    height: 10px;
+    font-size: 0.8rem;
+
+}
+.navbar_container .logo a {
+
+    color: white;
+    font-size: 1.3rem;
+
+    & img{
+    width: 50px;
+    margin-right: 20px;
+    }
+}
+
+.navbar_container .navlinks{
+    margin-left:-200px ;
+
+    & ul{
+          display: flex;
+
+    & li{
+        list-style-type: none;
+
+    & a{
+
+    color: white;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin: 5px;
+
+
+    }
+
+    } 
+    & li:nth-child(2):hover~.navbar_container .sub_solution{
+        display: block;
+        background-color: #ff4400;
+    }     
+    }   
+}
+.navbar_container .sub_solution{
+    position:absolute;
+    display: none;
+    top: 100px;
+    left: 500px;
+    background-color: red;
+    padding: 10px;
+    & ul li{
+        list-style-type: none;
+        margin-bottom: 10px;
+        border-bottom: 2px solid white;
+
+    & a{
+        color: white;
+    }
+        
+    }
+}
+
+
+
+.navbar_container .login_links.none{
+    margin-right: 10px;
+   
+    & a{
+        margin: auto 20px;
+        text-decoration: none;
+        color: white;
+    }
+    & a:nth-child(1){
+        background-color:#ff4400;
+        color:white;
+        padding: 7px 8px;
+        border-radius: 6px;
+        transition: all 0.7s;
+        font-size: 1.1rem;
+    }
+    & a:nth-child(1):hover{
+        background-color:#f8f9fa;
+        color: black;
+
+    }
+    & a:nth-child(2){
+        font-size: 1rem;
+        transition: all 0.7s;
+        position: relative;
+      
+        
+    }
+    & a:nth-child(2)::before{
+
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 2px;
+        background-color: white;
+        top: 25px;
+        left: 0px;
+        opacity: 0;
+        transition: all 0.4s;
+        
+    }
+    & a:nth-child(2):hover::before{
+        left: 0px;
+        opacity: 1;
+    }
+
+    & a:nth-child(3){
+        font-size: 1rem;
+        transition: all 0.7s;
+        position: relative;
+
+    }
+    & a:nth-child(3)::before{
+
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 2px;
+        background-color: white;
+        top: 25px;
+        left: 0px;
+        opacity: 0;
+        transition: all .5s;
+        
+    }
+    & a:nth-child(3):hover::before{
+        left: 0px;
+        opacity: 1;
+    }
+
+
+
+    /* ================= */
+
+    
+}
+
+.navbar_container .login_links.hidden{
+    display: none;
+}
+
+.navbar_container .login_links.profile{
+    margin-right: 10px;
+   
+    & a{
+        margin: auto 20px;
+        text-decoration: none;
+        color: white;
+    }
+    & a:nth-child(1){
+        background-color:#ff4400;
+        color:white;
+        padding: 7px 8px;
+        border-radius: 6px;
+        transition: all 0.7s;
+        font-size: 1.1rem;
+        margin-right:40px ;
+    }
+    & a:nth-child(1):hover{
+        background-color:#f8f9fa;
+        color: black;
+
+    }
+    & a:nth-child(2){
+      width: 50px;
+      position: relative;
+        
+    & img{
+        margin-right: 20px;
+        position: absolute;
+        width: 50px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-70%,-50%);
+        border-radius: 50%;
+        border: 1px solid var(--orange-color);
+    }
+        
+    }
+
+
+
+
+
+    
+}
+
+
+
+
+@media  (max-width :1290px){
+
+    .Navbar{
+       width: 100%;
+
+       & .navbar_container{
+        justify-content: space-between;
+
+
+        & .navlinks{
+            margin-left: 100px;
+            
+           }
+       }
+
+
+
+
+
+
+
+
+    }
+
+
+    
+}
+@media  (max-width :400px){
+
+    .Navbar{
+       width: 100%;
+
+       & .navbar_container{
+        justify-content: space-around;
+
+        & .logo{
+            margin-left: 40px;
+        }
+
+
+        & .navlinks{
+            margin-left: 100px;
+            display: none;
+            
+           }
+       }
+
+
+
+
+
+
+
+
+    }
+
+
+    
+}

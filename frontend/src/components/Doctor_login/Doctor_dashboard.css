@@ -1,0 +1,248 @@
+.Doctor_dashboard{
+    & .container{  
+     display: flex;
+ 
+     & .left-part{
+ 
+         width: 250px;
+ 
+     }
+ 
+     & .right-part{
+         width: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+ 
+      & .dashboard{
+           width: 100%;
+           display: block;
+        & .boxes{
+            margin-top: 4%;
+            padding: 10px;
+            height: 200px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            cursor: pointer;
+
+            & .box{
+                display: flex;
+                padding:10px 30px;
+                background-color: rgb(255, 255, 255);
+                height: fit-content;
+                border-radius: 6px;
+                align-items: center;
+                box-shadow: 0px 0px 16px #cdcdcd;
+
+                & .icon{
+                    padding: 0 10px;
+                    margin-right: 20px;
+                    & p{
+                        font-size: 1.5rem;
+                        color: var(--orange-color);
+                    }
+                }
+
+                & .content{
+                    padding: 10px;
+                    width: 100%;
+                    
+                    & h3{
+                        font-size: 1.3rem;
+                        color: #868686;
+                    }
+                    & h1{
+
+                        text-align: center;
+                        font-size: 2.5rem;
+                    }
+                }
+                
+            }
+
+        }
+
+       & .Appointments{
+        display: flex;
+
+        & .today-appointment{
+            width: 50%;
+            border-right: 2px solid rgb(176, 176, 176);
+
+            & .title{
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                width: 90%;
+                justify-content: space-between;
+               
+                & h2{
+                    color: #484747;
+                }
+                & p{
+
+                    & a{
+                        color: rgb(61, 61, 255);
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            & .appointment-list{
+                padding-top: 20px;
+                & ul{
+
+
+
+                    & .list{
+                        list-style-type: none;
+                        margin-left: 20px;
+                        display: flex;
+                        width: 85%;
+                        justify-content: space-around;
+                        padding: 10px;
+                       background-color: #f2f2f2;
+                        margin-bottom: 10px;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        box-shadow: 0px 0px 6px #cdcdcd;
+
+                        & .img{
+
+                            & img{
+                                width: 50px;
+                            }
+                        }
+                    }
+
+                    & .list:hover{
+                        background-color: #e1e1e1;
+                    }
+                }
+               
+
+            }
+
+
+
+
+        }
+
+        & .appointment-request{
+            width: 50%;
+            padding-left: 20px;
+            height: 500px;
+            overflow-y: scroll;
+
+            & .title{
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                width: 90%;
+                justify-content: space-between;
+               
+                & h2{
+                    color: #484747;
+                }
+                & p{
+
+                    & a{
+                        color: rgb(61, 61, 255);
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            & .appointment-list{
+                padding-top: 20px;
+                & ul{
+
+
+
+                    & .list{
+                        list-style-type: none;
+                        margin-left: 20px;
+                        display: flex;
+                        width: 85%;
+                        justify-content: space-around;
+                        padding: 10px;
+                       background-color: #f2f2f2;
+                        margin-bottom: 10px;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        box-shadow: 0px 0px 6px #cdcdcd;
+
+                        & .img{
+
+                            & img{
+                                width: 50px;
+                            }
+                        }
+
+                        & .content{
+                            & h2{
+                                color: #484747;
+                            }
+
+                            & p:nth-child(2){
+                                color: rgb(159, 159, 159);
+
+                            }
+
+                            & p:nth-child(3){
+                                color: black;
+                            }
+                        }
+
+                        & .status{
+
+                          
+                            align-items: center;
+                            display: flex;
+
+                            & a{
+                                padding: 0 10px;
+                                font-size: 1.6rem;
+                                border-radius: 50%;
+                                margin: 0 10px;
+
+                            }
+
+                            & a:nth-child(1){
+                                border: 1px solid red;
+                                background-color: rgba(255, 4, 4, 0.195);
+                                color: red;
+                            }
+                            & a:nth-child(2){
+                                border: 1px solid rgb(0, 255, 0);
+                                background-color: rgb(0, 255, 0,0.121);
+                                color: rgb(0, 255, 0);
+                            }
+                        }
+
+                    }
+
+                    & .list:hover{
+                        background-color: #e1e1e1;
+                    }
+                }
+               
+
+            }
+
+
+
+
+        }
+       }
+
+
+
+       }
+       
+     }
+ 
+ 
+    }
+ }

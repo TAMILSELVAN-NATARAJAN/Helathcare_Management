@@ -1,0 +1,119 @@
+
+.Doctor_login
+{
+    background-image: url("../../Assets/images/patient_login.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* filter: blur(8px); 
+    -webkit-filter: blur(8px); */
+    width: 100vw;
+    height:100vh;
+    
+}
+.login_container
+{
+   background-color: rgb(255, 255, 255);
+   position: absolute;
+   display: flex;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+.login_container .content-side{
+   background-color:#24A8A8;
+    padding: 40px;
+    width: 400px;
+}
+
+.login_container .content-side h5{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+}
+
+
+.login_container .content-side li{
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+}
+.login_container .content-side li i{
+  color: green;
+}
+
+/* ---------right-side--------- */
+.login_container .form_side{
+    width: 450px;
+}
+.login_container .form_side h4{
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.login_container .form_side .input-groups{
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  
+}
+.login_container .form_side .input-groups .input{
+    margin: 8px 0px;
+}
+.login_container .form_side .input-groups .input p i{
+    position: absolute;
+    top: 150px;
+    right:120px;
+    cursor: pointer;
+}
+.login_container .form_side .input-groups .input i{
+    font-size: 1.2rem;
+    color:var(--orange-color);
+}
+.login_container .form_side .input-groups input{
+    margin: 10px;
+    width: 250px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-bottom: 1px solid var(--orange-color);
+}
+
+.login_container .form_side input[type="submit"]
+{
+    padding: 10px 25px;
+    text-align: center;
+    outline: none;
+    border: none;
+    background-color: var(--orange-color);
+    margin-left: 150px;
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+    
+    
+}
+
+.login_container .form_side input[type="submit"]:hover{
+        
+        background-color: #ab3004;
+
+}
+
+
+
+.login_container .form_side .forget-details{
+    margin:20px 50px;
+}
+.login_container .form_side .forget-details p{
+   margin: 10px 0px;
+   font-size: 0.9rem;
+   color: rgb(84, 84, 84);
+}
+
+
+

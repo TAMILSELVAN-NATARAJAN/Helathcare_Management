@@ -1,0 +1,193 @@
+.appointment{
+    width: 100vw;
+   
+    padding: 30px;
+
+& .general-details{
+    padding: 30px;
+    border-radius: 6px;
+    border: 1px solid  rgb(171, 171, 171);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+   & p{
+    position: absolute;
+    top: -13px;
+    background-color: #fff;
+    padding: 0 5px;
+    font-weight: 700;
+   } 
+
+   & .input-group{
+    display: flex;
+    position: relative;
+   
+    & label{
+        font-size: 1.2rem; 
+        margin: 0 5px; 	
+
+    }
+
+    & input{
+        border: none;
+        outline: none;
+        font-size: 1rem;
+        margin: 0 5px;
+        background-color: transparent;
+        border-bottom: 1px solid rgb(109, 109, 109);
+    }
+   & span{
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    font-size: .9rem;
+    padding: 5px;
+    color: red;
+   }
+
+   }
+
+   & .input-group .visible{
+    display: block;
+   }
+   & .input-group .hidden{
+    display: none;
+   }
+}
+
+
+& .booking-details{
+     margin-top: 40px;
+    padding: 30px;
+    border-radius: 6px;
+    border: 1px solid  rgb(171, 171, 171);
+    position: relative;
+
+    & p{
+        position: absolute;
+        top: -13px;
+        background-color: #fff;
+        padding: 0 5px;
+        font-weight: 700;
+
+    }
+
+    & .section1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+      & .input-group{
+
+        & label{
+            font-size: 1.2rem; 
+            margin: 0 5px; 
+
+        }
+        & select{
+            padding: 6px;
+            outline: none;
+            border: none;
+            border: 1px solid #9c9c9c;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        
+
+        & textarea{
+            resize: none;
+           font-size: 1rem;
+        }
+
+      }
+
+      
+
+
+
+    }
+
+    & .section2{
+        padding: 50px 0;
+        display: flex;
+        align-items: center;
+      
+       
+        position: relative;
+
+        & .input-group{
+            margin-right: 15%;
+
+            & label{
+                font-size: 1.2rem; 
+                margin: 0 5px; 
+    
+            }
+
+            & input{
+                border: none;
+                outline: none;
+                padding: 6px;
+                border: 1px solid #9c9c9c;
+                cursor: pointer;
+                border-radius: 2px;
+            }
+        }
+       
+
+        & .submit{
+            position: absolute;
+            right: 0;
+
+            & input{
+                border: none;
+                outline: none;
+                background-color: var(--orange-color);
+                padding:10px;
+                border-radius: 7px;
+                cursor: pointer;
+                color: white;  
+            }
+
+            & a{
+                margin: 0 20px;
+            }
+
+            & a:nth-child(1){
+                background-color: #9c9c9c;
+                padding: 5px 10px;
+                border-radius: 7px;
+                cursor: pointer;
+                color: white;  
+            }
+
+            & a:nth-child(2){
+                background-color: var(--orange-color);
+                padding: 5px 10px;
+                border-radius: 7px;
+                cursor: pointer;
+                color: white;  
+            }
+        }
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+}

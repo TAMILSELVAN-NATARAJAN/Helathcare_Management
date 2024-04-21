@@ -1,0 +1,122 @@
+.Doctor_navbar{
+    background-color: var(--bg-color);
+    position: sticky;
+    top: 0;
+    z-index: 100000;
+    width: 100vw;
+}
+.Doctor_navbar .navbar_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    position: relative;
+}
+.navbar_container .logo{
+    margin-left: 20px;
+    display:flex;
+    align-items: center;
+}
+.navbar_container .logo a {
+
+    color: white;
+    font-size: 1.3rem;
+
+    & img{
+    width: 50px;
+    margin-right: 20px;
+    }
+}
+
+.navbar_container .navlinks{
+    margin-left:-200px ;
+
+    & ul{
+          display: flex;
+
+    & li{
+        list-style-type: none;
+
+    & a{
+
+    color: white;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin: 5px;
+
+
+    }
+
+    } 
+    & li:nth-child(2):hover~.navbar_container .sub_solution{
+        display: block;
+        background-color: #ff4400;
+    }     
+    }   
+}
+.navbar_container .sub_solution{
+    position:absolute;
+    display: none;
+    top: 100px;
+    left: 500px;
+    background-color: red;
+    padding: 10px;
+    & ul li{
+        list-style-type: none;
+        margin-bottom: 10px;
+        border-bottom: 2px solid white;
+
+    & a{
+        color: white;
+    }
+        
+    }
+}
+
+
+.Doctor_navbar .navbar_container .login_links{
+    margin-right: 10px;
+   
+    & a{
+        margin: auto 20px;
+        text-decoration: none;
+        color: white;
+    }
+    & a:nth-child(1){
+        background-color:#ff4400;
+        color:white;
+        padding: 7px 8px;
+        border-radius: 6px;
+        transition: all 0.7s;
+        font-size: 1.1rem;
+        margin-right:40px ;
+    }
+    & a:nth-child(1):hover{
+        background-color:#f8f9fa;
+        color: black;
+
+    }
+    & a:nth-child(2){
+      width: 50px;
+      position: relative;
+        
+    & img{
+        margin-right: 20px;
+        position: absolute;
+        width: 50px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-70%,-50%);
+        border-radius: 50%;
+        border: 1px solid var(--orange-color);
+    }
+        
+    }
+
+
+
+
+
+    
+}

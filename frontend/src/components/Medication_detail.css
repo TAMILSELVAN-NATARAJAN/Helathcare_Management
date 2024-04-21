@@ -1,0 +1,81 @@
+.Medication_detail{
+    display: flex;
+    width: 100vw;
+
+
+   & .left-part{
+        width: 250px;
+    }
+
+    &  .right-part{
+        width: 100%;
+       
+      
+        & .title{
+            padding: 20px;
+            & h2{
+               font-size: 1.4rem;
+               color: #2c2c2c;
+            }
+        }
+            
+    
+        & .table{
+        
+         
+            padding: 20px;
+           
+            & table{
+                
+              
+                padding: 10px;
+                width:100%;
+                border-collapse: collapse;
+                
+               
+             
+              & tr{
+                padding: 30px;
+               
+    
+                & th{
+                    padding: 20px;
+                  background-color:var(--orange-color);
+                  border-right: 1px solid rgb(255, 243, 243);
+                  color: #fff;
+                  font-size: 1.2rem;
+                  font-weight: 400;
+    
+                }
+    
+                & td{
+                    padding: 20px;
+                    border-right: 1px solid rgb(255, 255, 255);
+                    text-align: center;
+                }
+                & td:last-child{
+                    
+                    font-weight: 700;
+                  
+                }
+              
+    
+    
+              }  
+    
+              & tr:nth-child(odd){
+                background-color: #d6d6d6;
+             }
+              & tr:nth-child(even){
+                background-color: #ededed;
+             }
+    
+    
+            }
+        }
+    
+    
+        }
+
+}
+
